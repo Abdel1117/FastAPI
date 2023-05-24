@@ -1,14 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import {React, useState } from 'react';
+import {Routes, Route } from "react-router-dom";
+import Accueil from './Pages/Accueil/Accueil';
+import NavBarre from './Components/Nav/Nav';
+import Footer from './Components/Footer/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-            s
+          <NavBarre />
+          <main className='min-vh-100 '>
+            <Routes>
+              <Route path='/' element={<Accueil />} />
+            
+            </Routes>
+          </main>
+          <Footer />  
     </>
   )
 }
