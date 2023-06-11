@@ -51,9 +51,7 @@ export default function Accueil() {
             <Card.Body>
               <Card.Title>{pok.name}</Card.Title>
               <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+             {pok.stats.HP}
               </Card.Text>
             </Card.Body>
           </Card>
